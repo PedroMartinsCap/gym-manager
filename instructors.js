@@ -8,13 +8,27 @@ exports.post = function (req, res) {
       return res.send("Please, fill all fields!");
     }
   }
+  
+  let {avatar_url, birth, name, services, gender} = req.body
+
+  birth = Date.parse(birth)
+  const created_at = Date.now()
+  const id = Number(data.instructors.length + 1)
 
 
-  req.body.birth = Date.parse(req.body.birth)
-  req.body.created_at = Date.now()
+  data.instructors.push({
+    id,
+    avatar_url,
+    name,
+    gender,
+    birth,
+    services,
+    created_at
+  })
 
+  let id_count
 
-  data.instructors.push(req.body)
+  data.id_count = id_count + 1
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
     if (err) return res.send("Write file error!")
