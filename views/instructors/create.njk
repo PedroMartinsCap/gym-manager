@@ -5,45 +5,9 @@
     <section class="avatar"></section>
     <section class="details">
       <h3>Novo Instrutor</h3>
-      <div class="item">
-        <div>Avatar URL</div>
-        <div>
-          <input type="url" name="avatar_url" placeholder="http://">
-        </div>
-      </div>
-      <div class="item">
-        <div>Instrutor</div>
-        <div>
-          <input type="text" name="name" placeholder="Nome do Instrutor">
-        </div>
-      </div>
-      <div class="item">
-        <div>Data de Nascimento</div>
-        <div>
-          <input type="date" name="birth">
-        </div>
-      </div>
-      <div class="item">
-        <div>Sexo</div>
-        <div>
-          <span>
-            <input type="radio" name="gender" value="M" checked="checked">  
-            Masculino
-          </span>
-          <span>
-            <input type="radio" name="gender" value="F" checked="checked">
-            Feminino
-          </span>
-        </div>
-      </div>
-      <div class="item">
-        <div>Área de Atuação</div>
-        <div>
-          <input type="text" name="services" placeholder="Digite e separe os serviços prestados por virgula">
-        </div>
-      </div>
+      
+      {% include 'instructors/fields.njk' %}
 
-      <button type="submit">Salvar</button>
     </section>
   </form>
 {% endblock content %}
