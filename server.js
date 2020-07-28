@@ -7,15 +7,15 @@ const server = express()
 
 server.use(express.urlencoded({ extended: true }))
 server.use(express.static('public'))
+server.use(methodOverride('_method')) // antes da rota, pois deve sobrescrever, se ficar após a rota irá criar uma nova entrada.
 server.use(routes)
-server.use(methodOverride('_method'))
 
 server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
-  express: server,
   autoescape: false,
-  noCache: true,
+  express: server,
+  noCache: false
 })
 
 server.listen(5000, function () {

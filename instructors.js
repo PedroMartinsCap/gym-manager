@@ -29,6 +29,7 @@ exports.post = function (req, res) {
   const keys = Object.keys(req.body)
   for (key of keys) {
     if (req.body[key] == '') {
+      console.log('this field is not filled' + req.body[key] + key)
       return res.send('Please, fill all fields!')
     }
   }
@@ -50,9 +51,9 @@ exports.post = function (req, res) {
   })
 
   fs.writeFile('data.json', JSON.stringify(data, null, 2), function (err) {
-    if (err) return res.send('Write file error!')
-    return res.render('instructors/show')
+    if (err) return res.redirect('/instructors')
   })
+  return res.send('Write file error!')
 }
 
 //edit
@@ -99,10 +100,9 @@ exports.put = function (req, res) {
 
   data.instructors[index] = instructor
 
-  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function (err) {
     if (err) return res.send('Write error!')
-
-    return res.redirect(`/instructors/${id}`)
   })
 
+  return res.redirect(`/instructors/${id}`)
 }
