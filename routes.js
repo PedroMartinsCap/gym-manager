@@ -3,11 +3,11 @@ const routes = express.Router()
 const instructors = require('./instructors')
 
 routes.get('/', (req, res) => {
-  return res.redirect('/instructors')
+  return res.redirect('/instructors/teste')
 })
 
 routes.get('/instructors', (req, res) => {
-  return res.render('instructors/index')
+  return res.render('instructors/teste')
 })
 
 routes.get('/instructors/create', function (req, res) {
@@ -21,6 +21,8 @@ routes.get('/instructors/:id/edit', instructors.edit)
 routes.post('/instructors', instructors.post)
 
 routes.put('/instructors', instructors.put)
+
+routes.delete('/instructors', instructors.delete)
 
 routes.get('/members', (req, res) => {
   return res.send('members')

@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+
 :root {
   --primary-color: #7159c1;
   --secondary-color: #F7DF1E;
@@ -65,7 +65,7 @@ header {
 
 /* CARD */
 
-.card {
+ .card {
   background-color: white;
   width: 800px;
   min-height: 400px;
@@ -91,7 +91,7 @@ header {
   to {
     opacity: 1;
   }
-}
+} 
 
 .avatar {
   background-size: cover;
@@ -180,4 +180,9 @@ a.button {
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
+}
+
+#form-delete button[type="submit"]{
+  margin-top: 8px;
+  background-color: lightcoral;
 }
