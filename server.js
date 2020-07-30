@@ -1,5 +1,4 @@
 const express = require('express')
-const nunjucks = require('nunjucks')
 const routes = require('./routes')
 const methodOverride = require('method-override')
 
@@ -13,12 +12,13 @@ server.use(methodOverride('_method')) // antes da rota, pois deve sobrescrever, 
 
 server.use(routes)
 
+const nunjucks = require('nunjucks')
 server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
   autoescape: false,
   express: server,
-  noCache: false
+  noCache: true
 })
 
 server.listen(5000, function () {
