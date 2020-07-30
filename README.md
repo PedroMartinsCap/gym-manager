@@ -23,6 +23,6 @@ Faça o download do projeto, [via ZIP](https://github.com/PedroMartinsCap/gym-ma
 
 #### Via Zip
 
-* Fazer o download
+* Fazer o [Download](https://github.com/PedroMartinsCap/gym-manager/archive/master.zip)
   
 * Use os comandos ```npm install``` e ```npm start``` na raiz do diretório
