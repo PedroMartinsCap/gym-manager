@@ -1,10 +1,9 @@
-# Gym Manager
-
-Gerenciador de academias
+## Gym Manager
+#### Gerenciador de academias
 
 O GymManager é um projeto de gerenciador de academias que possibilita cadastrar instrutores e membros, bem como editá-los ou exclui-los. E ainda apresenta a especialidade de cada instrutor.
 
-## Como usar
+## Como usar?
 
 * Necessário que o npm esteja instalado
 
