@@ -3,7 +3,7 @@ const routes = express.Router()
 const instructors = require('./instructors')
 
 routes.get('/', (req, res) => {
-  return res.redirect('/instructors/index')
+  return res.redirect('/instructors')
 })
 
 routes.get('/instructors', instructors.index)

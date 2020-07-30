@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <div class="card">
+  <div class="card table-container">
     <table>
       <thead>
         <tr>
@@ -12,8 +12,8 @@
       <tbody>
         {% for instructor in instructors %}
         <tr>
-          <td>Mayk</td>
-          <td>Natação</td>
+          <td>{{instructor.name}}</td>
+          <td>{{instructor.services}}</td>
         </tr>
         {% endfor %}
       </tbody>
