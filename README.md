@@ -6,14 +6,23 @@ O GymManager é um projeto de gerenciador de academias que possibilita cadastrar
 
 ## Como usar
 
-* Necessário que o npm esteja instalado *
+* Necessário que o npm esteja instalado
 
-Faça o download do projeto, via ZIP ou Git Clone.
+Faça o download do projeto, [via ZIP](https://github.com/PedroMartinsCap/gym-manager/archive/master.zip) ou Git Clone.
 
 #### Via Git Clone
 
-Navegar até a pasta e usar o comando Git Clone
+* Navegar até a pasta
 
-Git Clone https://github.com/PedroMartinsCap/gym-manager.git
+* Usar o comando git clone:
 
-Use os comandos npm install e npm start
+  ```
+    git clone https://github.com/PedroMartinsCap/gym-manager.git
+  ```
+* Use os comandos ```npm install``` e ```npm start``` na raiz do diretório
+
+#### Via Zip
+
+* Fazer o download
+  
+* Use os comandos ```npm install``` e ```npm start``` na raiz do diretório
