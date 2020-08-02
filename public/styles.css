@@ -148,7 +148,7 @@ header {
   font-size: 12px;
 }
 
-input {
+input, select {
   width: 100%;
   outline: none;
   font-size: 16px;
@@ -264,3 +264,4 @@ table tbody tr td:nth-child(2) p{
   display: inline-block;
   margin-bottom: 16px;
 }
+
